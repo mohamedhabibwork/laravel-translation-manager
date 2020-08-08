@@ -1,6 +1,6 @@
 <?php
 
-namespace GeniusTS\TranslationManager;
+namespace Habib\TranslationManager;
 
 
 use Illuminate\Support\Facades\Route;
@@ -9,7 +9,7 @@ use Illuminate\Support\ServiceProvider;
 /**
  * Class TranslationManagerServiceProvider
  *
- * @package GeniusTS\TranslationManager
+ * @package Habib\TranslationManager
  */
 class TranslationManagerServiceProvider extends ServiceProvider
 {
@@ -71,7 +71,7 @@ class TranslationManagerServiceProvider extends ServiceProvider
         Route::group([
             'prefix'     => $prefix,
             'middleware' => config('translation_manager.middleware', []),
-            'namespace'  => '\GeniusTS\TranslationManager\Controllers',
+            'namespace'  => '\Habib\TranslationManager\Controllers',
         ], function ($router)
         {
             $router->get("/", "Controller@index")->name('translation_manager.index');

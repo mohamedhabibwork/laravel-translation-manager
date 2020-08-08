@@ -1,12 +1,12 @@
 <?php
 
-namespace GeniusTS\TranslationManager\Exceptions;
+namespace Habib\TranslationManager\Exceptions;
 
 
 /**
  * Class InvalidNamespaceException
  *
- * @package GeniusTS\TranslationManager
+ * @package Habib\TranslationManager
  */
 class InvalidNamespaceException extends \Exception
 {

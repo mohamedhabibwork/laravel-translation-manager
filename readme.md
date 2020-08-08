@@ -20,19 +20,19 @@ A WebUI to manage translation files for Laravel.
 Add it to your `composer.json` file
 
 ```
-"geniusts/laravel-translation-manager": "~0.1.0"
+"Habib/laravel-translation-manager": "~0.1.0"
 ```
 
 or install it via `composer`.
 
 ```
-composer require geniusts/laravel-translation-manager
+composer require Habib/laravel-translation-manager
 ```
 
 2- Add the package service provider to `config/app.php` file, under `providers` section.
 
 ```php
-GeniusTS\TranslationManager\TranslationManagerServiceProvider::class,
+Habib\TranslationManager\TranslationManagerServiceProvider::class,
 ```
 
 The service provider will added automatically if you are using Laravel 5.5
@@ -40,13 +40,13 @@ The service provider will added automatically if you are using Laravel 5.5
 3- If you want to change prefix or middleware applied on routes, publish configuration file.
 
 ```
-artisan vendor:publish --provider='\GeniusTS\TranslationManager\TranslationManagerServiceProvider' --tag=config
+artisan vendor:publish --provider='\Habib\TranslationManager\TranslationManagerServiceProvider' --tag=config
 ``` 
 
 4- If you want to change views layouts, publish views files.
 
 ```
-artisan vendor:publish --provider='\GeniusTS\TranslationManager\TranslationManagerServiceProvider' --tag=views
+artisan vendor:publish --provider='\Habib\TranslationManager\TranslationManagerServiceProvider' --tag=views
 ``` 
 
 ## images

@@ -1,19 +1,19 @@
 <?php
 
-namespace GeniusTS\TranslationManager\Controllers;
+namespace Habib\TranslationManager\Controllers;
 
 
 use Illuminate\Http\Request;
 use Illuminate\Http\JsonResponse;
-use GeniusTS\TranslationManager\Manager;
+use Habib\TranslationManager\Manager;
 use Illuminate\Routing\Controller as BaseController;
 use Illuminate\Foundation\Validation\ValidatesRequests;
-use GeniusTS\TranslationManager\Requests\TranslationRequest;
+use Habib\TranslationManager\Requests\TranslationRequest;
 
 /**
  * Class Controller
  *
- * @package GeniusTS\TranslationManager
+ * @package Habib\TranslationManager
  */
 class Controller extends BaseController
 {
@@ -21,7 +21,7 @@ class Controller extends BaseController
     use ValidatesRequests;
 
     /**
-     * @var \GeniusTS\TranslationManager\Manager
+     * @var \Habib\TranslationManager\Manager
      */
     protected $manager;
 
@@ -68,7 +68,7 @@ class Controller extends BaseController
     /**
      * Save translation file
      *
-     * @param \GeniusTS\TranslationManager\Requests\TranslationRequest $request
+     * @param \Habib\TranslationManager\Requests\TranslationRequest $request
      * @param string                                                   $language
      * @param string                                                   $file
      * @param string|null                                              $namespace

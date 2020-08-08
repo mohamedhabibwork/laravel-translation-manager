@@ -1,6 +1,6 @@
 <?php
 
-namespace GeniusTS\TranslationManager;
+namespace Habib\TranslationManager;
 
 
 use Illuminate\Support\Str;
@@ -9,12 +9,12 @@ use Illuminate\Support\Collection;
 use Illuminate\Support\Facades\App;
 use League\Flysystem\Adapter\Local;
 use Illuminate\Support\Facades\Lang;
-use GeniusTS\TranslationManager\Exceptions\InvalidNamespaceException;
+use Habib\TranslationManager\Exceptions\InvalidNamespaceException;
 
 /**
  * Class Manager
  *
- * @package GeniusTS\TranslationManager
+ * @package Habib\TranslationManager
  */
 class Manager
 {
@@ -90,7 +90,7 @@ class Manager
      * @param null $namespace
      *
      * @return \Illuminate\Support\Collection
-     * @throws \GeniusTS\TranslationManager\Exceptions\InvalidNamespaceException
+     * @throws \Habib\TranslationManager\Exceptions\InvalidNamespaceException
      */
     public function files($namespace = null)
     {

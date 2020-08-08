@@ -1,15 +1,15 @@
 <?php
 
-namespace GeniusTS\TranslationManager\Requests;
+namespace Habib\TranslationManager\Requests;
 
 
-use GeniusTS\TranslationManager\Manager;
+use Habib\TranslationManager\Manager;
 use Illuminate\Foundation\Http\FormRequest;
 
 /**
  * Class TranslationRequest
  *
- * @package GeniusTS\TranslationManager
+ * @package Habib\TranslationManager
  */
 class TranslationRequest extends FormRequest
 {
